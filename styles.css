@@ -3,6 +3,23 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+    color: #666;
+}
+
+h3{
+    text-align: center;
+    color: #999;
+    font-weight: 300;
+}
+
 header {
     background-color: black;
     align-items: center;
@@ -16,6 +33,14 @@ header {
     position: fixed;
     z-index: 9999; 
     }
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:15px;
+}
+
 nav a{
     text-decoration: none;
     color: white;
@@ -24,6 +49,12 @@ nav a{
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
+nav a:hover{
+    background-color: crimson;
+    border-radius: 4px;
+ }
+ 
 .banner{
     color: #D8D8D8;
     font-weight: 700;
@@ -42,10 +73,7 @@ nav a{
     font-weight: 700;
 }
 
-nav a:hover{
-    background-color: crimson;
-    border-radius: 4px;
- }
+
 .tagline {
     display: block;
     font-size: 12px;
@@ -110,26 +138,37 @@ h1 {
 
 .profile{
     min-height: 100vh;
-    background: linear-gradient(rgb(0, 0, 0), rgba(0,0,0,0.7));
-    background-size: cover;
-    background-position: center;
-    align-items: center;
     padding: 60px;
     color: white;
-     background: linear-gradient(rgba(0,0,0), rgba(0,0,0,0.7)), url("Zdio.jpg");
-    
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("Zdio.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilepic{
+width:325px;
+border-radius:50%;
+margin-bottom:15px;
+}
+
+.deskripsiprofile{
+    max-width: 500px;
+    text-align: center;
+}
+
+.deskripsiprofile p{
+    margin: 5px 0;
 }
 
 .deskripsiAbout p{
     margin: -5px 0;
 }
 
-.deskripsiProfile p{
-    margin: -5px 0;
-}
+
 
 .deskripsiContact p{
     margin: -5px 0;
@@ -276,4 +315,19 @@ h1 {
 .hijau {
     color: green;
     font-weight: 700px;
+}
+
+
+ol li:nth-child(6),
+ol li:nth-child(11){
+    margin-top: 100px;
+}
+
+
+
+ol li{
+    background:crimson;
+    padding:15px 20px;
+    margin-bottom:12px;
+    border-radius:8px;
 }

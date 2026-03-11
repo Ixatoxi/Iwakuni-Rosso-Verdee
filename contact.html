@@ -38,20 +38,59 @@ Yummy, Soury, Flavoury
         <a href="index.html"><i style="font-size:18px" class="fa">&#xf015;</i> home</a>
         <a href="profile.html"><i style="font-size:18px" class="fa">&#xf030;</i> profile</a>
         <a href="about.html"><i style="font-size:18px" class="fa">&#xf0c0;</i> about</a>
-        <a href="contact.html"><i style="font-size:18px" class="fa">&#xf005;</i> contact us</a> 
+        <a href="contact.html"><i style="font-size:18px" class="fa">&#xf005;</i> how to</a> 
     </nav>
  </header>
  <section class = "contact">
     <div class = "deskripsiContact">
-        <h1>Contact us</h1>
-        <h2>Samandar Nadiv Odilio Ramdhani</h2>
-        <h3>Head Programmer, CEO, Lead Designer</h3>
-<p> Instagram : https://www.instagram.com/nad1v445/ </p>
-<p> Tiktok : https://www.tiktok.com/@dipvv</p>
-<p> Discord : nadiv445</p>
-
+        <div class="fade-in">
+        <h1>How to create</h1>
+        <div style="text-align: center;">
+        <img src="zimage1.png" alt="wine" class="small" style="display: block; text-align: center; width: 150px; margin: auto; height: auto;">
+        </div></div>
+        <div class="fade-in">
+        <h2>Ikuti langkah-langkahnya</h2>
+        </div>
+        <div class="fade-in">
+        <h3>(pastikan sudah ada alat dan bahannya.)</h3>
+        </div>
+<ol>
+<li class="fade-in" style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Siapkan bahan-bahan yang diperlukan untuk membuat jenis wine yang diinginkan.</li>
+<li class="fade-in" style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Siapkan alat-alat yang akan dipakai yaitu galon, corong/serobong, mixer/blender, saringan, dan airlock.</li>
+<li class="fade-in" style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Pertama, lepaskan anggur dari tangkai-tangkainya.</li>
+<li class="fade-in" style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Cuci anggur hingga bersih dari kuman atau bakteri.</li>
+<li class="fade-in" style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Masukkan anggur ke dalam blender.</li>
+<li class="fade-in">Masukkan 3 sendok makan gula pasir.</li>
+<li class="fade-in">Setiap 3 sendok makan gula, tambahkan 1 sendok makan yeast.</li>
+<li class="fade-in">Blender agar yeast dan gula tercampur serta anggur hancur.</li>
+<li class="fade-in">Tuangkan hasil blender ke dalam galon.</li>
+<li class="fade-in">Ulangi proses hingga anggur habis.</li>
+<li class="fade-in" style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Tutup galon dengan airlock dan lakban agar tidak ada udara yang masuk.</li>
+<li class="fade-in" style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Jika muncul gelembung di airlock, fermentasi berhasil.</li>
+<li class="fade-in" style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Tunggu minimal 7–8 hari.</li>
+<li class="fade-in" style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Setelah 8 hari, saring wine agar tidak ada ampas.</li>
+<li class="fade-in" style="text-align: justify; max-width: 600px; margin-left: auto; margin-right: 0;">Masukkan ke dalam botol wine dan siap disajikan.</li>
+</ol>
     </div>
  </section>
+ <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const faders = document.querySelectorAll('.fade-in');
+        
+            const appearOnScroll = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting){
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+        
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+        </script>
     </body>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </html>
